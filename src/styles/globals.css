@@ -5,6 +5,17 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  /* background-color: #E9D2F4; */
+  background-color: #FAD1CA;
+
+  /* color: #00072D; */
+  color: #48284A;
+}
+  
+*::selection {
+  /* background: #B74F6F; */
+  background: rgba(200, 29, 37, 0.5);
+  color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {

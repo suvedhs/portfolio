@@ -1,0 +1,29 @@
+.head {
+    position: fixed;
+    width: 1000px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoWrapper {
+  font-size: 28px;
+}
+
+.headerMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerMenuItem {
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerMenuItem:hover {
+  background-color: #ffffff;
+}

@@ -1,0 +1,62 @@
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  text-align: left;
+}
+
+.homeContentWrapper {
+  width: max-content;
+}
+
+.homeContentWrapper * {
+  margin: 20px 0;
+}
+
+.introBig {
+  font-size: 52px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.introMed {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.introSmall {
+  font-size: 16px;
+  text-align: left;
+}
+
+.emphasis {
+  /* text-shadow: 2px -1px rgba(183, 79, 111, 0.3); */
+  font-weight: 600;
+  /* background-color: rgba(200, 29, 37, 0.3);
+  padding: 2px 5px;
+  border-radius: 5px; */
+}
+
+.homeImage {
+  position: relative;
+  margin-right: 30px;
+}
+
+.imageFrame {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(200, 29, 37, .8);
+  z-index: -1;
+  transition: all 0.1s ease-in-out;
+}
