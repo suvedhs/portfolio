@@ -26,6 +26,52 @@
   text-align: left;
 }
 
+.introBigWrapper {
+  position: relative;
+}
+
+@keyframes hatTip {
+  0% {
+    -moz-transform: rotate(30deg);
+    transform: rotate(10deg);
+  }
+  25% {
+    -moz-transform: rotate(30deg);
+    transform: rotate(10deg);
+  }
+  50% { 
+    -moz-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  75% {
+    -moz-transform: rotate(30deg);
+    transform: rotate(10deg);
+  }
+  100% {
+    -moz-transform: rotate(30deg);
+    transform: rotate(10deg);
+  }
+}
+
+.hat {
+  position: absolute;
+  top: -21px;
+  left: 33px;
+  filter: #48284A;
+  transform: rotate(10deg);
+  transform-origin: 100% 50%;
+  transition: all 0.1s ease-in-out;
+  animation: hatTip 3s 0s infinite;
+  -moz-animation: rotate(30deg) 7s 20s infinite;
+  -webkit-animation: rotate(30deg) 7s 20s infinite;
+       -o-animation: rotate(30deg) 7s 20s infinite;
+          animation: rotate(30deg) 7s 20s infinite;
+}
+
+.homeContentWrapper:hover .hat {
+  transform: rotate(30deg);
+}
+
 .introMed {
   font-size: 30px;
   font-weight: 300;

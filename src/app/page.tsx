@@ -8,7 +8,10 @@ export default function Home() {
       <Head />
       <div className={styles.homeContent}>
         <div className={styles.homeContentWrapper}>
-          <h1 className={styles.introBig}>Howdy! I&apos;m Suvedh.</h1>
+          <div className={styles.introBigWrapper}>
+            <h1 className={styles.introBig}>Howdy! I&apos;m Suvedh.</h1>
+            <Image className={styles.hat} height={50} width={35} id='cowboyHat' src="/cowboy-hat.svg" alt=""></Image>
+          </div>
           <h2 className={styles.introMed}>I&apos;m a professional full-stack developer.</h2>
           <p className={styles.introSmall}>I like working on <span className={styles.emphasis}>captivating</span> projects that <span className={styles.emphasis}>impact</span> my community.</p>
         </div>
