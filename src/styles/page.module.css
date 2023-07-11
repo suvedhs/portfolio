@@ -24,6 +24,7 @@
   font-size: 52px;
   font-weight: 400;
   text-align: left;
+  letter-spacing: 2px;
 }
 
 .introBigWrapper {
@@ -32,33 +33,32 @@
 
 @keyframes hatTip {
   0% {
-    -moz-transform: rotate(30deg);
-    transform: rotate(10deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
   }
   25% {
-    -moz-transform: rotate(30deg);
-    transform: rotate(10deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
   }
   50% { 
-    -moz-transform: rotate(30deg);
-    transform: rotate(30deg);
+    -moz-transform: rotate(40deg);
+    transform: rotate(40deg);
   }
   75% {
-    -moz-transform: rotate(30deg);
-    transform: rotate(10deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
   }
   100% {
-    -moz-transform: rotate(30deg);
-    transform: rotate(10deg);
+    -moz-transform: rotate(20deg);
+    transform: rotate(20deg);
   }
 }
 
 .hat {
   position: absolute;
-  top: -21px;
-  left: 33px;
+  top: -19px;
+  left: 36px;
   filter: #48284A;
-  transform: rotate(10deg);
   transform-origin: 100% 50%;
   transition: all 0.1s ease-in-out;
   animation: hatTip 3s 0s infinite;
