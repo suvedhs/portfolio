@@ -1,0 +1,32 @@
+.link {
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  display:inline-flex;
+  overflow: hidden;
+  padding: 0;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.lastHead {
+  margin-right: 0;
+}
+
+.link_graphic {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  pointer-events: none;
+  fill: none;
+  stroke: #800000;
+  stroke-width: 2.5px;
+  transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+
+.link:hover .link_graphic {
+  transform: translate3d(66.6%, 0, 0);
+}

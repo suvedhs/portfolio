@@ -1,14 +1,20 @@
 import styles from '../styles/head.module.css'
+import FancyLink from './FancyLink'
 
 export default function Head() {
+  const homeLink = { name: 'Home', to: '/' }
+  const aboutLink = { name: 'About', to: '/about' }
+  const projectsLink = { name: 'Projects', to: '/projects' }
+  const contactLink = { name: 'Contact', to: '/contact', isLast: true }
+
   return (
     <div className={styles.head}>
       <div className={styles.logoWrapper}>Suvedh Srikanth</div>
       <div className={styles.headerMenu}>
-        <div className={styles.headerMenuItem}>Home</div>
-        <div className={styles.headerMenuItem}>About</div>
-        <div className={styles.headerMenuItem}>Projects</div>
-        <div className={styles.headerMenuItem}>Contact</div>
+        <FancyLink link={homeLink} />
+        <FancyLink link={aboutLink} />
+        <FancyLink link={projectsLink} />
+        <FancyLink link={contactLink} />
       </div>
     </div>
   )
